@@ -39,7 +39,7 @@ export function StorySection() {
           </div>
 
           {/* Mission Statement */}
-          <div className="metallic-gradient steel-texture rounded-lg p-8 md:p-12 border border-border">
+          <div className="metallic-gradient steel-texture rounded-lg p-8 md:p-12 border border-gray-700">
             <div className="space-y-6">
               <h3 className="text-2xl md:text-3xl font-bold gold-accent text-center">MEU PRÓXIMO OBJETIVO</h3>
               <p className="text-xl text-center text-foreground leading-relaxed max-w-3xl mx-auto text-pretty">

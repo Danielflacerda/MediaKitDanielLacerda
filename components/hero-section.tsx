@@ -49,7 +49,7 @@ export function HeroSection() {
             </a>
             <a
               href="#contato"
-              className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-secondary/80 transition-colors border border-border"
+              className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-secondary/80 transition-colors border border-gray-700"
             >
               <Mail className="w-5 h-5" />
               Contato Profissional

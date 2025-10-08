@@ -18,7 +18,7 @@ export default function Page() {
       <ContactSection />
 
       {/* Footer */}
-      <footer className="py-8 border-t border-border">
+      <footer className="py-8 border-t border-gray-700">
         <div className="container mx-auto px-4">
           <p className="text-center text-muted-foreground text-sm">
             © 2025 Daniel Ferreira Lacerda (@dan_rera) - Todos os direitos reservados
