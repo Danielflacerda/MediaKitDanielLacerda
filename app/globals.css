@@ -1,5 +1,6 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: 20 14.3% 4.1%;
@@ -54,13 +55,13 @@
   body {
     @apply bg-zinc-950 text-gray-100;
   }
+}
 
-  /* Custom gold accent class for orange/gold text */
+@layer utilities {
   .gold-accent {
     @apply text-orange-500;
   }
 
-  /* Text shadow glow effect for titles */
   .text-shadow-glow {
     text-shadow: 0 0 20px rgba(249, 115, 22, 0.5);
   }
