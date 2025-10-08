@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export function GallerySection() {
+export default function GallerySection() {
   const images = [
     {
       src: "/images/training-1.png",

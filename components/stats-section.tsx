@@ -1,28 +1,80 @@
-import { TrendingUp, Users, Eye, Heart, MapPin } from "lucide-react"
 import { Card } from "@/components/ui/card"
 
-export function StatsSection() {
+// Inline SVG components
+const TrendingUpIcon = () => (
+  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+  </svg>
+)
+
+const UsersIcon = () => (
+  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+    />
+  </svg>
+)
+
+const EyeIcon = () => (
+  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+    />
+  </svg>
+)
+
+const HeartIcon = () => (
+  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+    />
+  </svg>
+)
+
+const MapPinIcon = () => (
+  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+    />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+  </svg>
+)
+
+export default function StatsSection() {
   const stats = [
     {
-      icon: Users,
+      icon: UsersIcon,
       label: "Seguidores",
       value: "1.500+",
       trend: "+69%",
     },
     {
-      icon: Eye,
+      icon: EyeIcon,
       label: "Alcance Mensal",
       value: "51.262",
       subtitle: "visualizações",
     },
     {
-      icon: Heart,
+      icon: HeartIcon,
       label: "Reels/Posts",
       value: "1.000 - 6.500",
       subtitle: "views",
     },
     {
-      icon: TrendingUp,
+      icon: TrendingUpIcon,
       label: "Stories",
       value: "250 - 800",
       subtitle: "views",
@@ -99,7 +151,7 @@ export function StatsSection() {
             {/* Cities */}
             <Card className="metallic-gradient steel-texture p-8 border-primary/30">
               <h3 className="text-2xl font-bold mb-6 gold-accent flex items-center gap-2">
-                <MapPin className="w-6 h-6" />
+                <MapPinIcon />
                 Principais Cidades
               </h3>
               <div className="space-y-4">

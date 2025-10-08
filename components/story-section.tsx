@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export function StorySection() {
+export default function StorySection() {
   return (
     <section className="py-20 md:py-32 relative">
       <div className="container mx-auto px-4">

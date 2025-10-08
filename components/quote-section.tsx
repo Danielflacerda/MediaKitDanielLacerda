@@ -1,4 +1,4 @@
-export function QuoteSection() {
+export default function QuoteSection() {
   return (
     <section className="py-20 md:py-32 relative overflow-hidden">
       <div className="absolute inset-0 metallic-gradient steel-texture opacity-50" />
