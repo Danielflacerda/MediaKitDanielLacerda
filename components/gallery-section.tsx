@@ -40,7 +40,7 @@ export default function GallerySection() {
             {images.map((image, index) => (
               <div
                 key={index}
-                className={`relative h-[300px] md:h-[400px] rounded-lg overflow-hidden border-2 border-primary/30 hover:border-primary/60 transition-all group ${image.span}`}
+                className={`relative h-[400px] md:h-[500px] rounded-lg overflow-hidden border-2 border-primary/30 hover:border-primary/60 transition-all group ${image.span}`}
               >
                 <img
                   src={image.src || "/placeholder.svg"}

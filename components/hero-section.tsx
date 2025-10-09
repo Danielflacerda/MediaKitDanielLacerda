@@ -10,7 +10,7 @@ export default function HeroSection() {
         <img
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20250930_214302%281%29-mcqgX2LdCYCZp013BNi3oFjUDfZPDg.jpg"
           alt="Daniel Lacerda"
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/80 via-zinc-950/60 to-zinc-950" />
       </div>

@@ -68,7 +68,7 @@ export default function StatsSection() {
       subtitle: "visualizações",
     },
     {
-      icon: HeartIcon,
+      icon: TrendingUpIcon,
       label: "Reels/Posts",
       value: "1.000 - 6.500",
       subtitle: "views",
