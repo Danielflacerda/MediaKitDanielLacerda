@@ -8,7 +8,7 @@ export default function HeroSection() {
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src={`${basePath}/images/hero-photo.png`}
+          src={`public/images/hero-photo.png`}
           alt="Daniel Lacerda"
           className="absolute inset-0 w-full h-full object-cover opacity-30"
         />

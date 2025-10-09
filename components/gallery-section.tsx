@@ -3,22 +3,22 @@ export default function GallerySection() {
 
   const images = [
     {
-      src: `${basePath}/images/training-1.png`,
+      src: `public/images/training-1.png`,
       alt: "Treino funcional",
       span: "md:col-span-2",
     },
     {
-      src: `${basePath}/images/training-2.png`,
+      src: `public/images/training-2.png`,
       alt: "Leg press",
       span: "md:col-span-1",
     },
     {
-      src: `${basePath}/images/training-3.png`,
+      src: `public/images/training-3.png`,
       alt: "Treino de peito",
       span: "md:col-span-1",
     },
     {
-      src: `${basePath}/images/casual-photo.png`,
+      src: `public/images/casual-photo.png`,
       alt: "Lifestyle",
       span: "md:col-span-2",
     },
