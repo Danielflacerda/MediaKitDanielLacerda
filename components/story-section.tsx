@@ -1,6 +1,6 @@
-import Image from "next/image"
-
 export default function StorySection() {
+  const basePath = typeof window !== "undefined" ? (window as any).__NEXT_DATA__?.props?.pageProps?.basePath || "" : ""
+
   return (
     <section className="py-20 md:py-32 relative">
       <div className="container mx-auto px-4">
@@ -34,7 +34,11 @@ export default function StorySection() {
             </div>
 
             <div className="relative h-[500px] rounded-lg overflow-hidden border-2 border-primary/30">
-              <Image src="/images/hero-photo.png" alt="Daniel Lacerda - Transformação" fill className="object-cover" />
+              <img
+                src={`${basePath}/images/hero-photo.png`}
+                alt="Daniel Lacerda - Transformação"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
             </div>
           </div>
 
@@ -53,7 +57,11 @@ export default function StorySection() {
           {/* Team Photo */}
           <div className="mt-16">
             <div className="relative h-[400px] rounded-lg overflow-hidden border-2 border-primary/30">
-              <Image src="/images/team-photo.png" alt="Equipe de treino" fill className="object-cover" />
+              <img
+                src={`${basePath}/images/team-photo.png`}
+                alt="Equipe de treino"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
             </div>
             <p className="text-center text-muted-foreground mt-4 italic">
               Parte do time que acompanhou e fortaleceu minha evolução — irmãos de ferro.

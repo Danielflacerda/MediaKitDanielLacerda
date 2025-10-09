@@ -1,24 +1,24 @@
-import Image from "next/image"
-
 export default function GallerySection() {
+  const basePath = typeof window !== "undefined" ? (window as any).__NEXT_DATA__?.props?.pageProps?.basePath || "" : ""
+
   const images = [
     {
-      src: "/images/training-1.png",
+      src: `${basePath}/images/training-1.png`,
       alt: "Treino funcional",
       span: "md:col-span-2",
     },
     {
-      src: "/images/training-2.png",
+      src: `${basePath}/images/training-2.png`,
       alt: "Leg press",
       span: "md:col-span-1",
     },
     {
-      src: "/images/training-3.png",
+      src: `${basePath}/images/training-3.png`,
       alt: "Treino de peito",
       span: "md:col-span-1",
     },
     {
-      src: "/images/casual-photo.png",
+      src: `${basePath}/images/casual-photo.png`,
       alt: "Lifestyle",
       span: "md:col-span-2",
     },
@@ -44,11 +44,10 @@ export default function GallerySection() {
                 key={index}
                 className={`relative h-[300px] md:h-[400px] rounded-lg overflow-hidden border-2 border-primary/30 hover:border-primary/60 transition-all group ${image.span}`}
               >
-                <Image
+                <img
                   src={image.src || "/placeholder.svg"}
                   alt={image.alt}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
