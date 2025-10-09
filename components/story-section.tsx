@@ -35,7 +35,7 @@ export default function StorySection() {
 
             <div className="relative h-[500px] rounded-lg overflow-hidden border-2 border-primary/30">
               <img
-                src={`/images/hero-photo.png`}
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20250930_214302%281%29-mcqgX2LdCYCZp013BNi3oFjUDfZPDg.jpg"
                 alt="Daniel Lacerda - Transformação"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -58,7 +58,7 @@ export default function StorySection() {
           <div className="mt-16">
             <div className="relative h-[400px] rounded-lg overflow-hidden border-2 border-primary/30">
               <img
-                src={`/images/team-photo.png`}
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20250930_213752-rkpO5X4P9zW1xD8LYA3xcFXZ2pn479.jpg"
                 alt="Equipe de treino"
                 className="absolute inset-0 w-full h-full object-cover"
               />

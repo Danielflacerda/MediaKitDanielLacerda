@@ -95,7 +95,7 @@ Veja as instruções completas no arquivo [DEPLOY.md](./DEPLOY.md)
 
 ### 📸 Preview
 
-![Preview do Mídia Kit](/images/hero-photo.png)
+![Preview do Mídia Kit](public/images/hero-photo.png)
 
 ### 📞 Contato
 

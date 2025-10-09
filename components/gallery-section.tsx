@@ -1,24 +1,22 @@
 export default function GallerySection() {
-  const basePath = typeof window !== "undefined" ? (window as any).__NEXT_DATA__?.props?.pageProps?.basePath || "" : ""
-
   const images = [
     {
-      src: `/images/training-1.png`,
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20250930_214020%281%29-4JdAWpNKD2ujndGe3GNL51OIat054C.jpg",
       alt: "Treino funcional",
       span: "md:col-span-2",
     },
     {
-      src: `/images/training-2.png`,
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20250816_154828-cWn41cEhcrswkedb2quH2J4KShhA3Y.jpg",
       alt: "Leg press",
       span: "md:col-span-1",
     },
     {
-      src: `/images/training-3.png`,
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20250816_150003%281%29-3EZf2tKE2kj5Sdu0BaYE95ClPmCbHm.jpg",
       alt: "Treino de peito",
       span: "md:col-span-1",
     },
     {
-      src: `/images/casual-photo.png`,
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20250911_161205-TG5lvu9XYl49VE7b5G8eVv6ooW7Lzl.jpg",
       alt: "Lifestyle",
       span: "md:col-span-2",
     },

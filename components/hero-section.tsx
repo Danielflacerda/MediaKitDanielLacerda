@@ -1,14 +1,14 @@
 import { InstagramIcon, MailIcon } from "./icons" // Assuming icons are imported from a separate file
 
 export default function HeroSection() {
-  const basePath = typeof window !== "undefined" ? (window as any).__NEXT_DATA__?.props?.pageProps?.basePath || "" : ""
+  // const basePath = typeof window !== "undefined" ? (window as any).__NEXT_DATA__?.props?.pageProps?.basePath || "" : ""
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-zinc-950">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src={`/images/hero-photo.png`}
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20250930_214302%281%29-mcqgX2LdCYCZp013BNi3oFjUDfZPDg.jpg"
           alt="Daniel Lacerda"
           className="absolute inset-0 w-full h-full object-cover opacity-30"
         />
